@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f9f4f7;
+  --sand: #f0e6ee;
+  --terracotta: #b64479;
+  --gold: #f1a6c5;
+  --warm-dark: #12252d;
+  --warm-mid: #582b59;
+  --warm-light: #687d76;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--warm-dark);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+}
+
+::selection {
+  background: var(--terracotta);
+  color: #fff;
+}
+
+/* ── Section headings ─────────────────── */
+.heading-serif {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+.section-title {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--warm-dark);
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 2px;
+  background: var(--terracotta);
+  border-radius: 2px;
+}
+
+/* ── Portfolio card overlay ───────────── */
+.portfolio-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 37, 45, 0.82);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+/* ── Pill button ──────────────────────── */
+.btn-pill {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid var(--terracotta);
+  color: var(--terracotta);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-pill:hover {
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.btn-pill-white {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-pill-white:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* ── Admin form inputs ────────────────── */
+.admin-input {
+  width: 100%;
+  background: white;
+  border: 1px solid #e2d9e8;
+  border-radius: 6px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.875rem;
+  color: var(--warm-dark);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-input:focus {
+  border-color: var(--terracotta);
+}
