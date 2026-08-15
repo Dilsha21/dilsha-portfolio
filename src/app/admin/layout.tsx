@@ -3,7 +3,7 @@ import "../globals.css";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Admin — Dilsha Portfolio",
+  title: "Dilsha Atugedara",
   robots: { index: false, follow: false },
 };
 
