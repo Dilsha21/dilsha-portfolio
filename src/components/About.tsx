@@ -35,7 +35,7 @@ export default function About({ content }: { content: Record<string, string> }) 
           <div>
             <Reveal delay={0.1}>
               <h3 className="heading-serif text-2xl mb-6" style={{ color: "var(--warm-dark)" }}>
-                Hi, I&apos;m Dilsha 👋
+                Hi, I&apos;m Dilsha 
               </h3>
             </Reveal>
             <Reveal delay={0.2}>

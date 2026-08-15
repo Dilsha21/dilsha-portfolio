@@ -7,12 +7,12 @@ const services = [
   {
     icon: "✦",
     title: "UI / UX Design",
-    body: "I design user-friendly interfaces that feel intuitive and look beautiful — building in Figma with accessible design systems and real user needs in mind.",
+    body: "I design user-friendly interfaces that feel intuitive and look beautiful. Building in Figma with accessible design systems and real user needs in mind.",
   },
   {
     icon: "◈",
     title: "Full-Stack Development",
-    body: "I build clean, responsive web apps from database to UI — comfortable across the stack with React, Next.js, Node, PostgreSQL, and Firebase.",
+    body: "I build clean, responsive web apps from database to UI. Comfortable across the stack with React, Next.js, Node, PostgreSQL, and Firebase.",
   },
   {
     icon: "◇",
